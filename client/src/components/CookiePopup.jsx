@@ -25,7 +25,6 @@ const CookiePopup = () => {
             onClick={() => handleAccept()}>
             I understand
           </button>
-          <a className={styles.learn_more} href="/">Learn more</a>
         </div>
       </div>
     </div>

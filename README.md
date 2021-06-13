@@ -1,5 +1,5 @@
 # wordPratice forms
-
+![](https://i.imgur.com/GYiwPUp.gif)
 ## Configuration
 Create a .env file in the main directory of the project, fill and add the following contents:
 ```json

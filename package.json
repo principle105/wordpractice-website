@@ -1,0 +1,23 @@
+{
+  "name": "ban_appeal",
+  "version": "1.0.0",
+  "description": "## Configuration Create a .env file in the main directory of the project, fill and add the following contents: ```json SENDGRID_API_KEY= MONGODB_CONNECTION_STRING= SECRET= CLIENT_ID= CLIENT_SECRET= CLIENT_CALLBACK_URL= ```",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-all": "cd client && npm install && npm run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongoose": "^5.12.13",
+    "passport": "^0.4.1",
+    "passport-discord": "^0.1.4",
+    "path": "^0.12.7"
+  }
+}

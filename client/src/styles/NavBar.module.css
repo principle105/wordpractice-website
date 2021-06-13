@@ -1,0 +1,137 @@
+@import "./vars.css";
+
+.container {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.branding {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.branding h1 {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.desktop li {
+  float: left;
+}
+
+.desktop a {
+  text-decoration: none;
+  letter-spacing: 1px;
+  padding: 0 3rem;
+  border-radius: 15px;
+  transition: background 0.3s;
+}
+
+.branding img {
+  width: 40px;
+  border-radius: 8px;
+}
+
+.desktop a:not(.active) {
+  color: var(--text-secondary);
+}
+
+.active {
+  color: var(--text-primary);
+}
+
+label{
+  display: none;
+}
+
+label {
+  font-size: 2rem;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .avatar {
+  width: 38px;
+  border-radius: 50%;
+  margin-right: 0.75em;
+}
+
+.profile .username {
+  color: var(--text-primary);
+  font-size: 1.2rem;
+}
+
+.login_btn {
+  padding: 0.85rem 2rem;
+  background-color: var(--primary);
+  color: var(--text-primary);
+  border-radius: 10px;
+}
+
+@media (max-width: 1100px) {
+  label {
+    display: block;
+    width: 10%;
+    z-index: 2;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .on {
+    display: block;
+  }
+
+  .desktop.on {
+    z-index: 1;
+    position: fixed;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(19, 19, 19, 0.438);
+    animation: fade 0.5s;
+  }
+  
+  .desktop.on li {
+    margin-right: 0;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 600px) {
+  .branding h1 {
+    font-size: 1.4rem;
+  }
+
+  .login_btn {
+    padding: 0.65rem 1.5rem;
+  }
+
+  .profile .username {
+    display: none;
+  }
+
+  .branding img {
+    display: none;
+  }
+
+}
+
+@keyframes fade {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}

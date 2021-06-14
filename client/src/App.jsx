@@ -5,6 +5,7 @@ import "./styles/main.css";
 // Importing components
 import NavBar from "./components/NavBar.jsx";
 import CookiePopup from "./components/CookiePopup.jsx";
+import Loading from "./components/Loading.jsx";
 
 // Importing Pages
 const HomePage = lazy(() => import("./pages/HomePage"));
@@ -12,7 +13,7 @@ const PageNotFound = lazy(() => import("./pages/PageNotFound"));
 const Form  = lazy(() => import("./pages/Form"));
 
 const renderLoader = () => (
-  <div></div>
+  <Loading />
 );
 
 export default function App() {

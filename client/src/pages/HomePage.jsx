@@ -1,7 +1,7 @@
 import React from "react";
-import {connect} from "react-redux";
-import {withRouter} from "react-router-dom";
-import styles from "../styles/HomePage.module.css";
+import { connect } from "react-redux";
+import { withRouter } from "react-router-dom";
+import styles from "../styles/pages/HomePage.module.css";
 import Typical from "react-typical";
 
 const HomePage = ({login: {loggedIn,username}}) => {

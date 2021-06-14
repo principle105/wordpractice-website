@@ -1,0 +1,10 @@
+@import "../vars.css";
+
+.container {
+  margin-top: 3rem;
+}
+
+.container .login_msg {
+  color: var(--text-primary);
+  text-align: center;
+}

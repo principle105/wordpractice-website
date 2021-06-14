@@ -9,6 +9,7 @@ import CookiePopup from "./components/CookiePopup.jsx";
 // Importing Pages
 const HomePage = lazy(() => import("./pages/HomePage"));
 const PageNotFound = lazy(() => import("./pages/PageNotFound"));
+const Form  = lazy(() => import("./pages/Form"));
 
 const renderLoader = () => (
   <div></div>
@@ -22,6 +23,7 @@ export default function App() {
       <CookiePopup />
       <Switch>
         <Route component={() => <Suspense fallback={renderLoader()}><HomePage /></Suspense>} exact path="/" />
+        <Route component={() => <Suspense fallback={renderLoader()}><Form /></Suspense>} path="/form/:id" />
         
         {/* 404 Page */}
         <Route component={() => <Suspense fallback={renderLoader()}><PageNotFound /></Suspense>} path="*" />

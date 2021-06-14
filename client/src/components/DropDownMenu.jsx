@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import styles from "../styles/DropDownMenu.module.css";
+import styles from "../styles/components/DropDownMenu.module.css";
 import { CSSTransition } from "react-transition-group";
 
 const DropDownMenu = () => {

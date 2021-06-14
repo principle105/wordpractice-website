@@ -1,0 +1,18 @@
+@import "../vars.css";
+
+.information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.information .title {
+  font-size: 3rem;
+  color: var(--text-primary);
+}
+
+.information .desc {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+}

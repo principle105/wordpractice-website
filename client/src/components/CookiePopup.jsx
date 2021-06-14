@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import styles from "../styles/CookiePopup.module.css";
+import styles from "../styles/components/CookiePopup.module.css";
 import Cookie from "../images/cookie.png";
 
 const CookiePopup = () => {

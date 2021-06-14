@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { connect } from "react-redux";
-import { withRouter,NavLink } from "react-router-dom";
-import styles from "../styles/NavBar.module.css";
+import { withRouter, NavLink } from "react-router-dom";
+import styles from "../styles/components/NavBar.module.css";
 import DropDownMenu from "./DropDownMenu.jsx";
 import Logo from "../images/logo.png";
 
@@ -37,8 +37,8 @@ const NavBar = ({login: {loggedIn,user_id,username,avatar}}) => {
 
       <ul className={`${styles.desktop}${!checked ? "" : ` ${styles.on}`}`}>
         <NavItem to="/" name="Home" />
-        <NavItem to="/ban-appeal" name="Ban Appeal" />
-        <NavItem to="/staff-applications" name="Staff Applications" />
+        <NavItem to="/form/ban-appeal" name="Ban Appeal" />
+        <NavItem to="/form/staff-applications" name="Staff Applications" />
       </ul>
 
       {loggedIn ? (
